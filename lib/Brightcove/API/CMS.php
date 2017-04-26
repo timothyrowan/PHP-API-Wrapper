@@ -7,6 +7,7 @@ use Brightcove\Object\Folder;
 use Brightcove\Object\Playlist;
 use Brightcove\Object\Subscription;
 use Brightcove\Object\Video\Images;
+use Brightcove\Object\Video\Rendition;
 use Brightcove\Object\Video\Source;
 use Brightcove\Object\Video\Video;
 
