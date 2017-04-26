@@ -13,6 +13,16 @@ use Brightcove\Object\Video\Video;
 class CMS extends API
 {
     /**
+     * @param  $folder_id
+     * @param  $video_id
+     * @return mixed
+     */
+    public function addVideoToFolder($folder_id, $video_id)
+    {
+        return $this->cmsRequest('PUT', "/folders/{$folder_id}/videos/{$video_id}", null);
+    }
+
+    /**
      * @return mixed
      */
     public function countPlaylists()
@@ -180,7 +190,7 @@ class CMS extends API
     }
 
     /**
-     * @param $video_id
+     * @param  $video_id
      * @return mixed
      */
     public function getVideoRenditions($video_id)
