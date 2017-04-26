@@ -1,7 +1,7 @@
 {
-  "name": "brightcove/api",
+  "name": "timothyrowan/bcapi",
   "description": "Brightcove PHP API Wrapper",
-  "keywords": ["brightcove","api"],
+  "keywords": ["timothyrowan","bcapi"],
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -16,6 +16,10 @@
     {
       "name": "janmashat",
       "homepage": "https://github.com/janmashat"
+    },
+    {
+      "name": "timothyrowan",
+      "homepage": "https://github.com/timothyrowan"
     }
   ],
   "require-dev": {
