@@ -20,7 +20,7 @@ class CMS extends API
      */
     public function addRendition($video_id, Rendition $rendition)
     {
-        return $this->cmsRequest('POST', 'videos/{$video_id}/assets/renditions', Rendition::class, false, $rendition);
+        return $this->cmsRequest('POST', '/videos/{$video_id}/assets/renditions', Rendition::class, false, $rendition);
     }
 
     /**
