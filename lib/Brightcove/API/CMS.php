@@ -14,6 +14,16 @@ use Brightcove\Object\Video\Video;
 class CMS extends API
 {
     /**
+     * @param  $video_id
+     * @param  Rendition   $rendition
+     * @return mixed
+     */
+    public function addRendition($video_id, Rendition $rendition)
+    {
+        return $this->cmsRequest('POST', 'videos/{$video_id}/assets/renditions', Rendition::class, false, $rendition);
+    }
+
+    /**
      * @param  $folder_id
      * @param  $video_id
      * @return mixed
